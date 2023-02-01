@@ -16,9 +16,6 @@ let obj = {
 }
 let objRet = reactive(obj)
 let {num} = toRefs(objRet)
-watch(num, (newVal, oldVal)=>{
-    console.log(111, newVal, oldVal)
-})
 </script>
 
 <style lang = "less" scoped>
