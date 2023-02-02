@@ -16,11 +16,8 @@ let objRet = reactive(obj)
 // })
 
 // 在页面刷新的时候就立即监听
-// 如果是拿到新旧值的话，那就用watch
-
 watchEffect(()=>{
     // 凡是写在这里的数据，只要发生变化，都会触发这里的代码执行
-    // 如果立即刷新的，处理逻辑的就用watchEffect
     console.log(objRet.num)
 })
 

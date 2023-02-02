@@ -20,7 +20,8 @@ let objRet = reactive(obj)
 
 watchEffect(()=>{
     // 凡是写在这里的数据，只要发生变化，都会触发这里的代码执行
-    // 如果立即刷新的，处理逻辑的就用watchEffect
+
+    // 如果
     console.log(objRet.num)
 })
 
