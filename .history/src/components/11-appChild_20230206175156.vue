@@ -1,7 +1,7 @@
 <template>
    <!-- 子组件 -->
-   <p>{{num}}</p>
-   <button @click="hdClick">按钮</button>
+   <p>{{num}}</p>\
+   <button @click="hdClick"></button>
 </template>
 <script lang='ts' setup>
 import {  defineProps, defineEmits } from 'vue'
@@ -11,14 +11,14 @@ import {  defineProps, defineEmits } from 'vue'
          default: 30
       }
     })
-    const emit = defineEmits<{
-         (event: 'fn'): void
-      }>()
     const hdClick = ()=>{
       // 以前通过$emit("自定义事件名",参数)
-      emit("fn")
+      const emit = defineEmits<{
+         (event: 'change'): void
+      }>()
     }
 </script>
+
 <style lang = "less" scoped>
     
 </style>

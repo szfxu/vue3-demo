@@ -1,6 +1,6 @@
 <template>
      <!-- 父组件 -->
-     <Child :num="num" @fn="changeNum"></Child>
+     <Child :num="num"></Child>
 </template>
 
 <script lang='ts' setup>
@@ -11,6 +11,7 @@ const changeNum = ()=>{
      num.value++
 }
 </script>
+
 <style lang = "less" scoped>
     
 </style>

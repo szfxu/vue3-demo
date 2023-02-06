@@ -1,7 +1,7 @@
 <template>
    <!-- 子组件 -->
-   <p>{{num}}</p>
-   <button @click="hdClick">按钮</button>
+   <p>{{num}}</p>\
+   <button @click="hdClick"></button>
 </template>
 <script lang='ts' setup>
 import {  defineProps, defineEmits } from 'vue'
@@ -19,6 +19,7 @@ import {  defineProps, defineEmits } from 'vue'
       emit("fn")
     }
 </script>
+
 <style lang = "less" scoped>
     
 </style>
