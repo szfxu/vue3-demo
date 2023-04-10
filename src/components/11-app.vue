@@ -7,8 +7,8 @@
 import Child from "./11-appChild.vue"
 import { ref } from 'vue'
 let num = ref(20)
-const changeNum = ()=>{
-     num.value++
+const changeNum = (val:number)=>{
+     num.value+=val
 }
 </script>
 <style lang = "less" scoped>

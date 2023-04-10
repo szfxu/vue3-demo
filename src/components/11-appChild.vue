@@ -12,11 +12,11 @@ import {  defineProps, defineEmits } from 'vue'
       }
     })
     const emit = defineEmits<{
-         (event: 'fn'): void
+         (event: 'fn',val: number): void
       }>()
     const hdClick = ()=>{
       // 以前通过$emit("自定义事件名",参数)
-      emit("fn")
+      emit("fn", 10)
     }
 </script>
 <style lang = "less" scoped>
