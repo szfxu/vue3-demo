@@ -1,0 +1,14 @@
+<template>
+  <input type="checkbox">全选/全不选
+</template>
+
+<script lang='ts' setup>
+import { reactive,toRefs  } from 'vue'
+let data = reactive({
+  list:[10,20,30,40,50]
+})
+</script>
+
+<style lang = "less" scoped>
+  
+</style>

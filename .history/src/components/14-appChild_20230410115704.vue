@@ -1,0 +1,14 @@
+<template>
+    <slot></slot>
+    子组件
+    <slot></slot>
+</template>
+
+<script lang='ts' setup>
+import {  } from 'vue'
+
+</script>
+
+<style lang = "less" scoped>
+    
+</style>
