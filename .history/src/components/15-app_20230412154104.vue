@@ -18,8 +18,7 @@
 </template>
 
 <script lang='ts' setup>
-// import Table from "./15-appChild.vue"
-import Table from '@'
+import Table from "./15-appChild.vue"
 import {  reactive } from 'vue'
 let state = reactive({
     arr:[{

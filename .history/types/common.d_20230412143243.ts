@@ -6,4 +6,5 @@ type objType = {
     age: number
 }
 declare var globObj:objType
+ 
 declare function fn(s?:string):void
